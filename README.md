@@ -42,7 +42,7 @@
 python -m pip install -r requirements.txt
 ```
 
-또는 `launcher.bat`의 2번을 실행하여 모듈을 설치할 수 있습니다.
+또는 `launcher.bat` or `launcher.sh`의 3번을 실행하여 모듈을 설치할 수 있습니다.
 
 ![Launcher](.github/launcher.png)
 
@@ -51,7 +51,7 @@ python -m pip install -r requirements.txt
 python run.py
 ```
 
-또는 `launcher.bat`의 1번을 실행하여 봇을 실행할 수 있습니다.
+또는 `launcher.bat` or `launcher.sh`의 2번을 실행하여 봇을 실행할 수 있습니다.
 
 ![Launcher](.github/launcher.png)
 
@@ -90,3 +90,5 @@ venv/bin/python run.py
 Minibox: 메인 개발
 
 Serial_number: 주식 알고리즘
+
+Decave: Launcher cli 개발
