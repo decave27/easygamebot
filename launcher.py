@@ -13,12 +13,12 @@ PYPATH = sys.executable
 try:
     import inquirer
 except ImportError:
-    subprocess.call(f"{PYPATH} -m pip install inquirer", shell=False)
+    subprocess.call(f"{PYPATH} -m pip install inquirer", shell=True)
     import inquirer
 try:
     import click
 except ImportError:
-    subprocess.call(f"{PYPATH} -m pip install click", shell=False)
+    subprocess.call(f"{PYPATH} -m pip install click", shell=True)
     import click
 
 # ================================================================================== #
@@ -51,11 +51,11 @@ def case(choice: str):
     elif choice == "2. 서버 실행":
         click.clear()
         print("서버를 실행합니다....")
-        subprocess.call(f"{PYPATH} run.py", shell=False)
+        subprocess.call(f"{PYPATH} run.py", shell=True)
     elif choice == "3. 모듈 설치":
         click.clear()
         print("모듈을 설치합니다.....")
-        subprocess.call(f"{PYPATH} -m pip install -r requirements.txt", shell=False)
+        subprocess.call(f"{PYPATH} -m pip install -r requirements.txt", shell=True)
         click.clear()
         select_interface()
     else:
